@@ -1,0 +1,263 @@
+/* Google Fonts Start */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
+/* //Google Fonts End */
+
+/* Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif; */
+}
+ol, ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* //Common CSS End */
+
+/* Header Section CSS Start */
+header nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .logo a{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #3A3A3A;
+}
+header nav .menu ul{
+    display: flex;
+}
+header nav .menu ul li a{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #3A3A3A;
+    padding: 5px 17px;
+}
+header nav .menu ul li:last-child a{
+    padding-right: 0;
+}
+/* //Header Section CSS End */
+
+/* Banner Section CSS Start */
+#banner .row{
+    margin-top: 50px;
+    align-items: center;
+}
+#banner .banner_desc h1{
+    font-size: 52px;
+    line-height: 70px;
+}
+#banner .banner_desc p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    width: 505px;
+    margin: 16px 0;
+}
+.btn{
+    display: inline-block;
+    background: #E02C6D;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 41px;
+}
+.btn i{
+    margin-left: 5px;
+}
+#banner .banner_desc, .banner_img{
+    width: 50%;
+}
+#banner .banner_img{
+    display: flex;
+    justify-content: center;
+}
+#banner .banner_img img{
+    border: 1px solid #F1E4FF;
+    border-radius: 50%;
+    padding: 25px;
+}
+/* //Banner Section CSS End */
+
+/* Company Logo Section CSS Start */
+#companyLogo{
+    margin-top: 70px;
+    
+}
+#companyLogo .logo_wrapper{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    padding: 30px 0 20px;
+    margin: 0 85px;
+}
+/* //Company Logo Section CSS End */
+
+/* Popular Collection Section CSS Start */
+#popularCollection{
+    padding-top: 90px;
+}
+#popularCollection .collection_title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    margin-bottom: 30px;
+}
+#popularCollection .collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    padding: 0 70px;
+}
+#popularCollection .collection{
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 17px 0;
+}
+#popularCollection .collection .collection_info h2{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+#popularCollection .collection .collection_info p.price{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+#popularCollection .collection .collection_info .ratings{
+    color: #FB8200;
+    font-size: 13px;
+}
+#popularCollection .collection .collection_info .ratings span{
+    color: #5E6366;
+    font-weight: 700;
+}
+#popularCollection .collection .collection_info p.isAbailable{
+    color: #787885;
+    font-size: 14px;
+    font-weight: 700;
+}
+/* //Popular Collection Section CSS End */
+
+/* Featured Products Section CSS Start */
+#featuredProducts{
+    margin-top: 100px;
+}
+#featuredProducts .row{
+    align-items: center;
+    padding: 0 45px;
+}
+#featuredProducts .featured_thumbnail{
+    width: 40%;
+}
+#featuredProducts .featured_desc{
+    width: 60%;
+}
+#featuredProducts .featured_desc h2{
+    font-size: 38px;
+    line-height: 60px;
+}
+#featuredProducts .featured_desc p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #6C6C6C;
+    width: 501px;
+    padding: 16px 0;
+}
+#featuredProducts .btn{
+    border-radius: 0;
+}
+/* //Featured Products Section CSS End */
+
+/* Footer Section CSS Start */
+footer{
+    background-color: #0A0826;
+    padding: 50px 0;
+}
+footer .container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer .footer_content h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+}
+footer .footer_content p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #D9DBE1;
+}
+footer .footer_social{
+    display: flex;
+}
+footer .footer_social li a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+}
+/* //Footer Section CSS End */
+
+
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    header nav {
+        flex-direction: column;
+    }
+    #banner .row{
+        flex-direction: column-reverse;
+
+    }
+    #companyLogo .logo_wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #popularCollection .collections{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
