@@ -83,8 +83,12 @@ header nav .menu ul li:last-child a{
     font-size: 16px;
     line-height: 24px;
     color: #fff;
-    padding: 8px 20px;
+    padding: 12px 20px;
     border-radius: 41px;
+    transition: all 0.3s linear;
+}
+.btn:hover{
+    background: black;
 }
 .btn i{
     margin-left: 5px;
@@ -172,6 +176,7 @@ header nav .menu ul li:last-child a{
 /* Featured Products Section CSS Start */
 #featuredProducts{
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 #featuredProducts .row{
     align-items: center;
@@ -196,7 +201,7 @@ header nav .menu ul li:last-child a{
     padding: 16px 0;
 }
 #featuredProducts .btn{
-    border-radius: 0;
+    border-radius: 5px;
 }
 /* //Featured Products Section CSS End */
 
@@ -225,6 +230,7 @@ footer .footer_content p{
 }
 footer .footer_social{
     display: flex;
+    justify-content: center;
 }
 footer .footer_social li a{
     display: inline-block;
@@ -235,6 +241,7 @@ footer .footer_social li a{
     color: #fff;
     text-align: center;
     line-height: 32px;
+    margin: 10px 10px;
 }
 /* //Footer Section CSS End */
 
@@ -259,5 +266,8 @@ footer .footer_social li a{
     #popularCollection .collections{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+    }
+    #featuredProducts .row{
+        flex-direction: column;
     }
 }
